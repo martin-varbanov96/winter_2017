@@ -1,0 +1,5 @@
+https://www.superdatascience.com/opencv-face-recognition/  <---!!!! Very imporant and usefull
+
+https://www.youtube.com/watch?v=yFSPnu6_TZY <---- Visual Control Framework
+
+https://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html <---- OpenCV doc with face recognition
