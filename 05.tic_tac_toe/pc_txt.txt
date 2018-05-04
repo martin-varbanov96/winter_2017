@@ -1,0 +1,4586 @@
+import sys
+if sys.version_info[0] == 2:
+    input = raw_input # python 2 compatibility
+print('Welcome to Tic Tac Toe!')
+print('You are X.\n')
+print('   |   |   ')
+print('   |   |   ')
+print('   |   |   ')
+print('---+---+---')
+print('   |   |   ')
+print('   |   |   ')
+print('   |   |   ')
+print('---+---+---')
+print('   |   |   ')
+print('   |   |   ')
+print('   |   |   \n')
+print('Enter the number of your move:')
+print('  7|8|9')
+print('  -+-+-')
+print('  4|5|6')
+print('  -+-+-')
+print('  1|2|3')
+move = input()
+if move == '1':
+    grid.change_value(9, 0)
+    grid.print_grid()
+    move = input()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(2, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(4, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+if move == '2':
+    grid.change_value(1, 0)
+    grid.print_grid()
+    move = input()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(8, 0)
+        grid.print_grid()
+        move = input()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '9':
+        grid.change_value(9, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                sys.exit()
+if move == '3':
+    grid.change_value(9, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(2, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+if move == '4':
+    grid.change_value(3, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(6, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '9':
+        grid.change_value(9, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+if move == '5':
+    grid.change_value(9, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(8, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(6, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(4, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(2, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '7':
+                    grid.change_value(7, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+if move == '6':
+    grid.change_value(1, 0)
+    grid.print_grid()
+    move = input()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(7, 0)
+        grid.print_grid()
+        move = input()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(4, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '7':
+        grid.change_value(7, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '7':
+                grid.change_value(7, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(7, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '9':
+        grid.change_value(9, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(7, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '7':
+            grid.change_value(7, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+if move == '7':
+    grid.change_value(3, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(4, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(8, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '9':
+        grid.change_value(9, 1)
+        grid.change_value(8, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+if move == '8':
+    grid.change_value(7, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '6':
+                    grid.change_value(6, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(2, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(9, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                move = input()
+                if move == '9':
+                    grid.change_value(9, 1)
+                    sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(9, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '9':
+                grid.change_value(9, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '9':
+            grid.change_value(9, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(9, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(3, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(1, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '1':
+                grid.change_value(1, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                move = input()
+                if move == '1':
+                    grid.change_value(1, 1)
+                    sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                sys.exit()
+    if move == '9':
+        grid.change_value(9, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+if move == '9':
+    grid.change_value(7, 0)
+    grid.print_grid()
+    move = input()
+    if move == '1':
+        grid.change_value(1, 1)
+        grid.change_value(5, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '2':
+        grid.change_value(2, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '3':
+        grid.change_value(3, 1)
+        grid.change_value(6, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(2, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '4':
+                    grid.change_value(4, 1)
+                    sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '4':
+        grid.change_value(4, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(6, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                move = input()
+                if move == '2':
+                    grid.change_value(2, 1)
+                    sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(3, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(5, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '5':
+                grid.change_value(5, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+    if move == '5':
+        grid.change_value(5, 1)
+        grid.change_value(1, 0)
+        grid.print_grid()
+        move = input()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '3':
+            grid.change_value(3, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(6, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(8, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+            if move == '3':
+                grid.change_value(3, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '8':
+                    grid.change_value(8, 1)
+                    sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                move = input()
+                if move == '3':
+                    grid.change_value(3, 1)
+                    sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(4, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '6':
+        grid.change_value(6, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                grid.change_value(4, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                sys.exit()
+            if move == '8':
+                grid.change_value(8, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '8':
+            grid.change_value(8, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+    if move == '8':
+        grid.change_value(8, 1)
+        grid.change_value(3, 0)
+        grid.print_grid()
+        move = input()
+        if move == '1':
+            grid.change_value(1, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '2':
+            grid.change_value(2, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '4':
+            grid.change_value(4, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
+        if move == '5':
+            grid.change_value(5, 1)
+            grid.change_value(1, 0)
+            grid.print_grid()
+            move = input()
+            if move == '2':
+                grid.change_value(2, 1)
+                sys.exit()
+            if move == '4':
+                grid.change_value(4, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+            if move == '6':
+                grid.change_value(6, 1)
+                grid.change_value(2, 0)
+                grid.print_grid()
+                sys.exit()
+        if move == '6':
+            grid.change_value(6, 1)
+            grid.change_value(5, 0)
+            grid.print_grid()
+            sys.exit()
